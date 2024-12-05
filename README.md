@@ -4,7 +4,7 @@ Portfolio website with home page about me, projects, and a contact me page.
 Porfolio has landing home page.
 ![Screenshot 2024-12-05 085107](https://github.com/user-attachments/assets/4e646af4-e3ee-4d44-a583-5e04696d3da0)
 About me
-![Screenshot 2024-12-05 085107](https://github.com/user-attachments/assets/51d8153f-1480-4038-99a0-bfcaf0a07de5)
+![Screenshot 2024-12-05 085555](https://github.com/user-attachments/assets/cc4e0046-ffb0-4a5b-b74c-87f4f74d90a2)
 Project page
 ![Screenshot 2024-12-05 085010](https://github.com/user-attachments/assets/5b43a301-efbe-4c5f-b90e-10ee908f2bd7)
 Contact me
