@@ -1,0 +1,221 @@
+body /*overall page styling*/
+{
+    margin: 0;
+    font-family: 'Bangers', sans-serif;
+    background-image: url('images/background.jpg');
+    background-color: rgba(53, 136, 163, 0.9);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#nav-bar /* navi bar styling */
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* isnt seen anymore moved to cover the navi bar background with square buttons  */
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#nav-bar button 
+{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(53, 136, 163);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+#nav-bar button:hover 
+{
+    background-color: rgb(53, 136, 163);/* When hovered invert colors */
+    color: white;
+}
+#about-me-page /* about me page style */
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* helps align text to the top */
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px; /* fixed space below navbar so stuff doesnt get hidden */
+    padding-bottom: 20px;
+}
+
+.text-content 
+{
+    flex: 1;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.text-content h1 
+{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-content p 
+{
+    margin: 10px 0;
+}
+
+.image-content 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    justify-content: flex-start; /* Align images to the top */
+    align-items: center;
+    margin-left: 20px;
+}
+.image-content img 
+{
+    width: 100%;
+    max-width: 520px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 5px solid grey;
+    margin-bottom: 20px; /* adds space between the images if they are back to back */
+}
+
+#projects-page 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 20px; /* Adjust for fixed navbar */
+    background-color: rgba(10, 158, 184, 0.582); /* Slightly darker than the main background */
+    color: rgb(0, 0, 0);
+    min-height: 100vh; /* Full viewport height */
+}
+#projects-page .project 
+{
+    display: flex;
+    flex-direction: row; /* aligns the items into row like */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* space between projects  */
+}
+#projects-page .text-content 
+{
+    flex: 1;
+    text-align: left;
+    padding: 20px 20px 20px 20px; /*adds padding to the grey box*/
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-left: 20px; /* make the text box float a bit out so the boarder will fully show making a floating text */
+}
+#projects-page .text-content h2 
+{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+#projects-page .text-content p 
+{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+#projects-page .text-content a 
+{
+    color: #0004ff; 
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#projects-page .text-content a:hover 
+{
+    color: #FFF;
+}
+#projects-page .image-content 
+{
+    flex: 1;
+    text-align: center;
+}
+#projects-page .image-content img 
+{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 5px solid grey;
+}
+#contact-page 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 20px; /* Adjust for fixed navbar */
+    background-color: rgba(10, 158, 184, 0.582); /* Slightly darker than the main background */
+    color: rgb(0, 110, 255);
+    min-height: 100vh; /* Full viewport height */
+}
+#contact-page h1 
+{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.contact-content .text-content 
+{
+    flex: 1;
+    padding: 20px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.contact-content .text-content p 
+{
+    margin: 10px 0;
+}
+.contact-content .image-content 
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.contact-content .image-content img 
+{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 5px solid grey;
+}
