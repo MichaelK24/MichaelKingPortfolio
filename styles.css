@@ -219,3 +219,34 @@ body /*overall page styling*/
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     border: 5px solid grey;
 }
+@media (max-width: 768px) /*mobile view*/
+{
+    .text-content, .image-content 
+    {
+        flex: 1 1 100%; /* full width for both sections */
+        margin-left: 0; /* Reset margin */
+    }
+
+    .image-content 
+    {
+        margin-bottom: 20px; /*spacing between stacked image and text */
+    }
+
+    .image-content img 
+    {
+        width: 100%; /* images take full width */
+        max-width: 100%; 
+        height: auto; /*keep aspect ratio of the image to stop crazy spreading */
+    }
+
+    #about-me-page, #projects-page, #contact-page 
+    {
+        flex-direction: column; /*makes the content stack verticly*/
+        align-items: center; /*-align items in the center */
+    }
+
+    #projects-page .project 
+    {
+        flex-direction: column; /* stakcs projects vertically on the project page*/
+    }
+}
