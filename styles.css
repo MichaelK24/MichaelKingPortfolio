@@ -3,11 +3,11 @@ body /*overall page styling*/
     margin: 0;
     font-family: 'Bangers', sans-serif;
     background-image: url('images/background.jpg');
-    background-color: rgba(53, 136, 163, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: black;
+    color: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,8 +27,8 @@ body /*overall page styling*/
 #nav-bar button 
 {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: rgb(53, 136, 163);
+    background-color: rgba(30, 30, 30, 0.9);
+    color: white;
     border: none;
     font-size: 1rem;
     font-weight: bold;
@@ -40,19 +40,61 @@ body /*overall page styling*/
 }
 #nav-bar button:hover 
 {
-    background-color: rgb(53, 136, 163);/* When hovered invert colors */
+    background-color: rgba(60, 60, 60, 0.9);/* When hovered invert colors */
     color: white;
+}
+#landing-page /* landing page style */
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+}
+#landing-page .text-content
+{
+    flex: 0 1 auto;
+    max-width: 500px;
+    text-align: center;
+}
+#landing-page .text-content h1
+{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#landing-page .image-content
+{
+    flex: 0 1 auto;
 }
 #about-me-page /* about me page style */
 {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* helps align text to the top */
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-    padding-top: 100px; /* fixed space below navbar so stuff doesnt get hidden */
-    padding-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
+    min-height: 100vh;
+}
+#about-me-page .text-content
+{
+    flex: 0 1 auto;
+    max-width: 500px;
+    text-align: center;
+}
+#about-me-page .text-content h1
+{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#about-me-page .image-content
+{
+    flex: 0 1 auto;
 }
 
 .text-content 
@@ -106,28 +148,31 @@ body /*overall page styling*/
     align-items: center;
     justify-content: flex-start;
     padding: 100px 20px; /* Adjust for fixed navbar */
-    background-color: rgba(10, 158, 184, 0.582); /* Slightly darker than the main background */
-    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
     min-height: 100vh; /* Full viewport height */
 }
 #projects-page .project 
 {
     display: flex;
     flex-direction: row; /* aligns the items into row like */
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 40px; /* space between projects  */
+    width: 90%;
+    max-width: 1200px;
 }
 #projects-page .text-content 
 {
     flex: 1;
+    max-width: 500px;
     text-align: left;
     padding: 20px 20px 20px 20px; /*adds padding to the grey box*/
     background-color: rgba(128, 128, 128, 0.8);
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     color: white;
-    margin-left: 20px; /* make the text box float a bit out so the boarder will fully show making a floating text */
+    margin-right: 20px;
 }
 #projects-page .text-content h2 
 {
@@ -153,7 +198,10 @@ body /*overall page styling*/
 #projects-page .image-content 
 {
     flex: 1;
-    text-align: center;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #projects-page .image-content img 
 {
@@ -170,8 +218,8 @@ body /*overall page styling*/
     align-items: center;
     justify-content: flex-start;
     padding: 100px 20px; /* Adjust for fixed navbar */
-    background-color: rgba(10, 158, 184, 0.582); /* Slightly darker than the main background */
-    color: rgb(0, 110, 255);
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
     min-height: 100vh; /* Full viewport height */
 }
 #contact-page h1 
